@@ -6,10 +6,11 @@ import com.mundo.disney.projections.PersonajesSeries;
 
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 
-public interface PersonajeService {
+public interface PersonajeService  {
 
     Optional<Personaje> getPersonaje(int personajeId);
     List<PersonajesLite> getAllPersonajesLite();
@@ -21,5 +22,4 @@ public interface PersonajeService {
     List<PersonajesSeries> getByMovieAndAge(String movie, Integer age);
     Personaje save(Personaje personaje);
     boolean delete(int personajeId);
-
 }
